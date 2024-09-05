@@ -1,0 +1,45 @@
+/* src/components/Catalog.css */
+.catalog {
+    padding: 20px;
+    background-color: #FFF1E6; /* Same background as Home for consistency */
+    font-size: 30px;
+    font-weight: 100px;
+}
+
+.catalog h1 {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 50px; /* Updated font size */
+    color: #790323;
+    margin-top: 5rem;
+}
+
+.catalog-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column size */
+    gap: 40px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.category img {
+    width: 100%; /* Ensure image takes full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 900px; /* Set a maximum width to control size */
+   
+}
+
+.category h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #790323;
+}

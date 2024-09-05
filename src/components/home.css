@@ -1,0 +1,154 @@
+/* src/pages/home.css */
+.home-content {
+    font-family: "Sacramento", cursive;
+    color: #790323;
+    font-weight: 400;
+    text-align: center;
+    font-size: 110px;
+    padding: 0;
+    margin: 0;
+  }
+  .home-content .home-title {
+    margin-bottom: 2rem; /* Add space between title and subtitle */
+  }
+  
+  .home-content .home-subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    margin-bottom: 2rem;
+  }
+  
+  /* Add typing effect */
+  .typing {
+    display: inline-block;
+    border-right: 2px solid #5D4037; /* Cursor effect */
+    white-space: nowrap;
+    overflow: hidden; /* Hide the text that is not yet revealed */
+    animation: typing 7s steps(30, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  /* Keyframes for blinking cursor */
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #5D4037; }
+  }
+  
+  
+  .home-content .welcome-image {
+    margin-top: 2rem;
+    margin-left: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: auto;
+    overflow: hidden;
+    margin-left: 30rem;
+  }
+  
+  .home-content .welcome-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .New-arrival {
+    font-family: "Montserrat", sans-serif;
+    text-align: left; /* Align text to the left */
+    margin-left: 1rem; /* Optional: Add margin to the left if needed */
+    display: inline-block; /* Ensure it doesn’t take the full width */
+    font-size: 60px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  .card-container-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack text and card container vertically */
+    align-items: flex-start; /* Align children to the start (left) */
+    margin-left: 5rem;
+    margin-right:5rem;
+  }
+  
+ 
+.card-container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 1rem;
+    gap: 2rem; /* Space between cards */
+    scroll-snap-type: x mandatory; /* Snap scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    width: 100%; /* Full width to make sure it can scroll */
+    box-sizing: border-box; /* Include padding in width calculation */
+    position: relative;
+  }
+  .card-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
+  /* Optional Bubble scroll effect */
+  .card-container::before,
+  .card-container::after {
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+  }
+  
+  .card-container::before {
+    left: 0;
+  }
+  
+  .card-container::after {
+    right: 0;
+  }
+
+  /* Card container styling */
+  .card-container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 1rem;
+    gap: 2rem; /* Space between cards */
+    scroll-snap-type: x mandatory; /* Snap scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    width: 100%; /* Full width to make sure it can scroll */
+    box-sizing: border-box; /* Include padding in width calculation */
+    position: relative;
+  }
+  .logo-container {
+    display: flex;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    border-radius: 8px;
+    justify-content: space-between; /* This aligns the images to opposite sides */
+    align-items: center; /* This vertically centers the images */
+    background-color:#957461; /* Transparent background */
+    padding: 20px; /* Optional padding */
+  }
+  
+  .logo-image, .founders {
+    max-width: 45%; /* Adjust the width of the images as needed */
+    height: auto;
+    border-radius: 8px;
+  }
+  @media (max-width: 768px) {
+    .logo-container {
+      flex-direction: column; /* Stack the images on top of each other for small screens */
+    }
+  
+    .logo-image, .welcome-image {
+      max-width: 100%;
+    }
+  }
+  

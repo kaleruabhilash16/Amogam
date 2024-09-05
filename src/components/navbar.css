@@ -1,0 +1,61 @@
+
+  
+  .navbar {
+    color: #790323;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0; 
+
+  }
+  .navbar .logo {
+    display: flex;
+    align-items: center; /* Vertically align items in the center */
+  }
+  
+  .navbar .logo{
+    font-family: "Sacramento", cursive;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #790323;
+  }
+  .navbar .logo-image {
+    width: 6rem; /* Maintain aspect ratio */
+    margin-right: 1rem; /* Space between image and text */
+    vertical-align: middle
+
+  }
+  
+  .navbar .nav-links {
+    display: flex;
+    gap: 2rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-optical-sizing: auto;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  .navbar .nav-links a {
+    color:#790323;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+    transition: 0.5s;
+  }
+  
+  .navbar .nav-links a:hover {
+    transform: scale(2);
+    opacity: 1;
+    color: #790323;
+    text-decoration: none;
+    filter: blur(0);
+    padding: 1rem;
+  }
+  .navbar .nav-links:hover a:not(:hover) {
+    transform: scale(1);
+    opacity: 0.2;
+    filter: blur(5px);
+  }
