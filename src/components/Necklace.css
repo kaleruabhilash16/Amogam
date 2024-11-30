@@ -1,0 +1,18 @@
+.card-container-necklace {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.card-container-necklace .card {
+    margin-bottom: 20px; /* Adjust the value for the vertical space between rows */
+}
+
+h1{
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+}
+.sortsorting-box{
+    padding-left: 10%;
+}

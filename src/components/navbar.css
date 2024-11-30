@@ -11,14 +11,16 @@
   }
   .navbar .logo {
     display: flex;
-    align-items: center; /* Vertically align items in the center */
+    color: #790323;
+    align-items: center;
+    text-decoration: none; /* Vertically align items in the center */
   }
   
   .navbar .logo{
     font-family: "Sacramento", cursive;
     font-weight: bold;
+    text-decoration: none;
     font-size: 4rem;
-    color: #790323;
   }
   .navbar .logo-image {
     width: 6rem; /* Maintain aspect ratio */

@@ -4,6 +4,7 @@ import jew2 from '../jew2.jpg';
 import earrings from '../earrings.jpg';
 import bracelet from '../bracelet.jpg';
 import necklace from '../necklace.jpg';
+import { Link } from 'react-router-dom';
 
 const Catalog = () => {
   return (
@@ -20,7 +21,9 @@ const Catalog = () => {
         </div>
         <div className="category" data-aos="fade-up" data-aos-delay="300">
           <h2>Necklace</h2>
+          <Link to="/necklaces">
           <img src={necklace} alt="Necklace" />
+          </Link>
         </div>
         <div className="category" data-aos="fade-up" data-aos-delay="400">
           <img src={bracelet} alt="Bracelet" />

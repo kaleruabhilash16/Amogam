@@ -12,6 +12,7 @@ import p3 from '../p3.jpg';
 import thelogo from '../thelogo.png'
 import founders from '../founders.jpg';
 import Footer from './footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const products = [
@@ -20,7 +21,11 @@ const products = [
   { id: 3, image: p2, name: 'Ashwam Earrings', price: '₹250' },
   { id: 4, image: welcomeImage, name: 'Product 4', price: '₹280' },
   { id: 5, image: p3, name: 'Ashwa Kamalam Earrings', price: '₹290' },
-  // Add more products as needed
+  {id: 6, image: p3, name: 'Ashwa Kamalam Earrings', price: '₹290' },
+  {id: 7, image: p3, name: 'Ashwa Kamalam Earrings', price: '₹290' },
+  {id: 8, image: p3, name: 'Ashwa Kamalam Earrings', price: '₹290' },
+  {id: 9, image: p3, name: 'Ashwa Kamalam Earrings', price: '₹290' },
+  {id: 10, image: p3, name: 'Ashwa Kamalam Earrings', price: '₹290' },
 ];
 
 const Home = () => {
@@ -35,7 +40,7 @@ const Home = () => {
 
   <div className="logo-container" data-aos="fade-up">
     <img src={thelogo} alt="Logo" className="logo-image" data-aos="fade-up"  />
-    <img src={founders} alt="Another" className="founders" data-aos="fade-up" />
+    <img src={founders} alt="Another" className="founders" data-aos="fade-down" />
   </div>
 
   <div className="card-container-wrapper">
