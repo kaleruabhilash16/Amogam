@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Card from './Card';
-import p1 from '../p1.jpg';
+import p1 from '../assets/images/p1.jpg';
 import './Necklace.css';
 
 const necklaceproducts = [
