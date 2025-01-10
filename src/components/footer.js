@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css'; // Import the footer styles
-import thelogo from '../thelogo.png'; // Import the logo image if needed
+import thelogo from '../assets/images/thelogo.png'; // Import the logo image if needed
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 

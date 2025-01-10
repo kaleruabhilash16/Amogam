@@ -1,9 +1,9 @@
 import React from 'react';
 import './Catalog.css'; // Import the CSS for styling
-import jew2 from '../jew2.jpg';
-import earrings from '../earrings.jpg';
-import bracelet from '../bracelet.jpg';
-import necklace from '../necklace.jpg';
+import jew2 from '../assets/images/jew2.jpg';
+import earrings from '../assets/images/earrings.jpg';
+import bracelet from '../assets/images/bracelet.jpg';
+import necklace from '../assets/images/necklace.jpg';
 import { Link } from 'react-router-dom';
 
 const Catalog = () => {
